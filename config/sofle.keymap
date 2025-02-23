@@ -29,6 +29,15 @@
 
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        macro_excl_mark: macro_excl_mark {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LALT &kp N3 &kp N3>;
+            label = "MACRO_EXCL_MARK";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
