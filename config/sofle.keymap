@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define BASE 0
@@ -33,7 +34,7 @@
         macro_excl_mark: macro_excl_mark {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LALT &kp N3 &kp N3>;
+            bindings = <&kt LALT &kp N3 &kp N3 &kt LALT>;
             label = "MACRO_EXCL_MARK";
         };
     };
