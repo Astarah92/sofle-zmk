@@ -34,7 +34,11 @@
         macro_excl_mark: macro_excl_mark {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LALT &kp N3 &kp N3 &kt LALT>;
+            bindings 
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp N3 &kp N3>
+                , <&macro_release &kp LALT>
+                ;
             label = "MACRO_EXCL_MARK";
         };
     };
